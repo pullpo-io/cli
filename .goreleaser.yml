@@ -109,7 +109,7 @@ nfpms: #build:linux
       - deb
       - rpm
     contents:
-      - src: "./share/man/man1/pullpo*.1"
+      - src: "./share/man/man1/pullpo*.1.gz"
         dst: "/usr/share/man/man1"
       - src: "./share/bash-completion/completions/pullpo"
         dst: "/usr/share/bash-completion/completions/pullpo"
