@@ -28,9 +28,9 @@ Pullpo CLI is a wrapper made in top of the GitHub and GitLab CLI, so that you ca
 
 `pullpo` is available via [Homebrew][] and as a downloadable binary from the [releases page][].
 
-| Install:              | Upgrade:              |
-| --------------------- | --------------------- |
-| `brew install pullpo` | `brew upgrade pullpo` |
+```bash
+brew tap pullpo-io/cli
+```
 
 #### Windows
 
@@ -68,10 +68,22 @@ First you need to login on your GitHub account using the CLI.
 pullpo auth login
 ```
 
-All of the commands of the [GitHub CLI](https://cli.github.com/manual/) are available, try doing:
+You can get started by creating a PR and a associated Slack channel with:
 
 ```bash
 pullpo pr create
+```
+
+In order to get a full list and explanation of all the commands run:
+
+```bash
+man pullpo
+```
+
+Or to get info about a specific command:
+
+```bash
+man pullpo <command>
 ```
 
 ## 🤝 Contributing

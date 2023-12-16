@@ -20,7 +20,7 @@ brews:
     license: "MIT"
     repository:
       owner: pullpo-io
-      name: cli
+      name: homebrew-cli
       branch: main
 
 
