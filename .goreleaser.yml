@@ -9,6 +9,19 @@ release:
     name: cli
   
 
+brews: 
+  -
+    name: Pullpo CLI 
+    commit_author:
+      name: marco
+      email: marco@pullpo.io
+    homepage: "https://pullpo.io/"
+    description: "Control Pullpo, GitHub and GitLab from the terminal."
+    license: "MIT"
+    repository:
+      owner: pullpo-io
+      name: cli
+      branch: main
 
 
 before:
