@@ -43,15 +43,15 @@ Download packaged binaries from the [releases page][].
 [Homebrew]: https://brew.sh
 [releases page]: https://github.com/pullpo-io/cli/releases/latest
 
-### 🐙 2. Install [Pullpo](https://pullpo.io)
+### 🐙 2. Install [Pullpo](https://pullpo.io/app) in GitHub and Slack.
+
+**Follow the installation instructions at [pullpo.io/app](https://pullpo.io/app)**
 
 In order to have the Pullpo functionality available in the CLI, you'll need to install Pullpo in your GitHub/Gitlab and Slack workspace.
 
 ```
 📌 Pullpo can only be installed in GitHub/GitLab orgs, not on personal accounts
 ```
-
-**Go to [Pullpo.io](https://pullpo.io/app)** and follow the instructions to install Pullpo on GitHub/GitLab and Slack.
 
 <p align="center">
   <img src="./readme/install-pullpo.gif" alt="install Pullpo" />
