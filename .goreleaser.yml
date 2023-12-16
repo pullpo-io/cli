@@ -11,7 +11,7 @@ release:
 
 brews: 
   -
-    name: Pullpo CLI 
+    name: pullpo 
     commit_author:
       name: marco
       email: marco@pullpo.io
