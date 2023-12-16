@@ -23,7 +23,7 @@ brews:
       name: homebrew-cli
       branch: main
     extra_install: |
-      man1.install "/usr/share/man/man1/pullpo.1.gz"
+      man1.install "./share/man/man1/pullpo.1.gz"
 
 
 before:
@@ -78,7 +78,7 @@ archives:
     rlcp: true
     files:
       - LICENSE
-      - ./share/man/man1/pullpo*.1
+      - ./share/man/man1/pullpo*.1.gz
   - id: macos-archive
     builds: [macos]
     name_template: "pullpo_{{ .Version }}_macOS_{{ .Arch }}{{ if .Arm }}v{{ .Arm }}{{ end }}"
@@ -87,7 +87,7 @@ archives:
     rlcp: true
     files:
       - LICENSE
-      - ./share/man/man1/pullpo*.1
+      - ./share/man/man1/pullpo*.1.gz
   - id: windows-archive
     builds: [windows]
     name_template: "pullpo_{{ .Version }}_windows_{{ .Arch }}{{ if .Arm }}v{{ .Arm }}{{ end }}"
@@ -109,7 +109,7 @@ nfpms: #build:linux
       - deb
       - rpm
     contents:
-      - src: "./share/man/man1/pullpo*.1.gz"
+      - src: "./share/man/man1/pullpo*.1"
         dst: "/usr/share/man/man1"
       - src: "./share/bash-completion/completions/pullpo"
         dst: "/usr/share/bash-completion/completions/pullpo"
