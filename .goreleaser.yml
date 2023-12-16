@@ -22,6 +22,9 @@ brews:
       owner: pullpo-io
       name: homebrew-cli
       branch: main
+    extra_install: |
+      bash_completion.install "./share/bash-completion/completions/pullpo" => "pullpo"
+      man1.install "./share/man/man1/pullpo*.1"
 
 
 before:
