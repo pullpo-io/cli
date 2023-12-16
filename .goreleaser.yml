@@ -23,7 +23,7 @@ brews:
       name: homebrew-cli
       branch: main
     extra_install: |
-      man1.install "./share/man/man1/pullpo.1.gz"
+      man1.install "/usr/share/man/man1/pullpo.1.gz"
 
 
 before:
