@@ -17,7 +17,7 @@
 <p align="center">
 Pullpo CLI is a wrapper made in top of the GitHub and GitLab CLI, so that you can also control Pullpo from the terminal.
 
-  <img src="./readme/demo1.gif" alt="demo1" />
+  <img src="./readme/demo.gif" alt="demo" />
 </p>
 
 ## 🚀 Installation
