@@ -9,7 +9,7 @@
 </div>
 <br>
 <p align="center">
-    <a href="https://pullpo.io"><img src="https://img.shields.io/badge/Pullpo-CLI-green.svg?style=flat-square" alt="codely.tv"/></a>
+    <a href="https://pullpo.io"><img src="https://img.shields.io/badge/Pullpo-CLI-green.svg?style=flat-square" alt="pullpo.io"/></a>
    <a href="https://github.com/pullpo-io/cli/releases"><img src="https://img.shields.io/github/v/release/pullpo-io/cli"></a>
     
     
@@ -17,7 +17,9 @@
 <p align="center">
 Pullpo CLI is a wrapper made in top of the GitHub and GitLab CLI, so that you can also control Pullpo from the terminal.
 
-  <img src="./readme/demo.gif" alt="demo" />
+  <a href="https://pullpo.io">
+    <img src="./readme/demo.gif" alt="demo" />
+  </a>
 </p>
 
 ## 🚀 Installation
@@ -54,7 +56,9 @@ In order to have the Pullpo functionality available in the CLI, you'll need to i
 ```
 
 <p align="center">
-  <img src="./readme/install-pullpo.gif" alt="install Pullpo" />
+  <a href="https://pullpo.io/app">
+    <img src="./readme/install-pullpo.gif" alt="install Pullpo" />
+  </a>
 </p>
 
 You can check the [GitHub](https://docs.pullpo.io/github-permissions) and [Slack](https://docs.pullpo.io/slack-permissions) permissions we ask for along with their reasons on our [docs page](https://docs.pullpo.io/).
@@ -68,6 +72,11 @@ pullpo auth login
 ```
 
 You can get started by creating a PR and an associated Slack channel with:
+
+```bash
+pullpo pr create
+```
+
 To get a full list and explanation of all the commands run:
 
 ```bash
