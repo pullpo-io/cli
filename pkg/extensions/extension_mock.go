@@ -3,14 +3,6 @@
 
 package extensions
 
-import (
-	"sync"
-)
-
-// Ensure, that ExtensionMock does implement Extension.
-// If this is not the case, regenerate this file with moq.
-var _ Extension = &ExtensionMock{}
-
 // ExtensionMock is a mock implementation of Extension.
 //
 //	func TestSomethingThatUsesExtension(t *testing.T) {
@@ -53,81 +45,6 @@ var _ Extension = &ExtensionMock{}
 //		// and then make assertions.
 //
 //	}
-type ExtensionMock struct {
-	// CurrentVersionFunc mocks the CurrentVersion method.
-	CurrentVersionFunc func() string
-
-	// IsBinaryFunc mocks the IsBinary method.
-	IsBinaryFunc func() bool
-
-	// IsLocalFunc mocks the IsLocal method.
-	IsLocalFunc func() bool
-
-	// IsPinnedFunc mocks the IsPinned method.
-	IsPinnedFunc func() bool
-
-	// LatestVersionFunc mocks the LatestVersion method.
-	LatestVersionFunc func() string
-
-	// NameFunc mocks the Name method.
-	NameFunc func() string
-
-	// OwnerFunc mocks the Owner method.
-	OwnerFunc func() string
-
-	// PathFunc mocks the Path method.
-	PathFunc func() string
-
-	// URLFunc mocks the URL method.
-	URLFunc func() string
-
-	// UpdateAvailableFunc mocks the UpdateAvailable method.
-	UpdateAvailableFunc func() bool
-
-	// calls tracks calls to the methods.
-	calls struct {
-		// CurrentVersion holds details about calls to the CurrentVersion method.
-		CurrentVersion []struct {
-		}
-		// IsBinary holds details about calls to the IsBinary method.
-		IsBinary []struct {
-		}
-		// IsLocal holds details about calls to the IsLocal method.
-		IsLocal []struct {
-		}
-		// IsPinned holds details about calls to the IsPinned method.
-		IsPinned []struct {
-		}
-		// LatestVersion holds details about calls to the LatestVersion method.
-		LatestVersion []struct {
-		}
-		// Name holds details about calls to the Name method.
-		Name []struct {
-		}
-		// Owner holds details about calls to the Owner method.
-		Owner []struct {
-		}
-		// Path holds details about calls to the Path method.
-		Path []struct {
-		}
-		// URL holds details about calls to the URL method.
-		URL []struct {
-		}
-		// UpdateAvailable holds details about calls to the UpdateAvailable method.
-		UpdateAvailable []struct {
-		}
-	}
-	lockCurrentVersion  sync.RWMutex
-	lockIsBinary        sync.RWMutex
-	lockIsLocal         sync.RWMutex
-	lockIsPinned        sync.RWMutex
-	lockLatestVersion   sync.RWMutex
-	lockName            sync.RWMutex
-	lockOwner           sync.RWMutex
-	lockPath            sync.RWMutex
-	lockURL             sync.RWMutex
-	lockUpdateAvailable sync.RWMutex
-}
 
 // CurrentVersion calls CurrentVersionFunc.
 func (mock *ExtensionMock) CurrentVersion() string {
