@@ -9,9 +9,6 @@ import (
 )
 
 type IssuesPayload struct {
-	Assigned  IssuesAndTotalCount
-	Mentioned IssuesAndTotalCount
-	Authored  IssuesAndTotalCount
 }
 
 type IssuesAndTotalCount struct {

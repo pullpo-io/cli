@@ -8,12 +8,6 @@ import (
 
 type ExtTemplateType int
 
-const (
-	GitTemplateType      ExtTemplateType = 0
-	GoBinTemplateType    ExtTemplateType = 1
-	OtherBinTemplateType ExtTemplateType = 2
-)
-
 //go:generate moq -rm -out extension_mock.go . Extension
 type Extension interface {
 	Name() string // Extension Name without gh-

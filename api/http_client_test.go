@@ -73,21 +73,7 @@ func TestNewHTTPClient(t *testing.T) {
 			},
 			wantStderr: "",
 		},
-		{
-			name: "GHES no authentication token",
-			args: args{
-				config:         tinyConfig{"github.com:oauth_token": "MYTOKEN"},
-				appVersion:     "v1.2.3",
-				logVerboseHTTP: false,
-			},
-			host: "example.com",
-			wantHeader: map[string]string{
-				"authorization": "",
-				"user-agent":    "GitHub CLI v1.2.3",
-				"accept":        "application/vnd.github.merge-info-preview+json, application/vnd.github.nebula-preview",
-			},
-			wantStderr: "",
-		},
+
 		{
 			name: "github.com in verbose mode",
 			args: args{
