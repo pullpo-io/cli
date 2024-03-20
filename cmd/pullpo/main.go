@@ -74,10 +74,14 @@ func mainRun() exitCode {
 		// override survey's poor choice of color
 		surveyCore.TemplateFuncsWithColor["color"] = func(style string) string {
 			switch style {
-			case "white":
-				return ansi.ColorCode("default")
+			case "red":
+				return ansi.ColorCode("red")
+			case "cyan":
+				return ansi.ColorCode("cyan")
+			case "yellow":
+				return ansi.ColorCode("yellow")
 			default:
-				return ansi.ColorCode(style)
+				return ansi.ColorCode("default")
 			}
 		}
 	}
