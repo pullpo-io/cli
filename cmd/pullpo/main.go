@@ -71,14 +71,7 @@ func mainRun() exitCode {
 		surveyCore.DisableColor = true
 		ansi.DisableColors(true)
 	} else {
-		// override survey's poor choice of color
-		surveyCore.TemplateFuncsWithColor["color"] = func(style string) string {
-			switch style {
-			case "white":
-				return ansi.ColorCode("default")
-			default:
-				return ansi.ColorCode(style)
-			}
+
 		}
 	}
 

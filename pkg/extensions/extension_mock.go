@@ -54,8 +54,7 @@ var _ Extension = &ExtensionMock{}
 //
 //	}
 type ExtensionMock struct {
-	// CurrentVersionFunc mocks the CurrentVersion method.
-	CurrentVersionFunc func() string
+
 
 	// IsBinaryFunc mocks the IsBinary method.
 	IsBinaryFunc func() bool

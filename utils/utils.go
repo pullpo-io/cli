@@ -9,7 +9,6 @@ import (
 
 func IsDebugEnabled() (bool, string) {
 	debugValue, isDebugSet := os.LookupEnv("GH_DEBUG")
-	legacyDebugValue := os.Getenv("DEBUG")
 
 	if !isDebugSet {
 		switch legacyDebugValue {
