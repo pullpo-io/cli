@@ -1,0 +1,31 @@
+# Pullpo Threaded Conversations on GitHub
+## What is the 一pullpo一 directory I see on my project?
+The  directory allows your team to respond to comments that do not reference code in a
+dedicated thread, instead of having to "quote reply" which makes following a conversation more
+complex than it needs to be.
+
+**DO NOT REMOVE OR .GITIGNORE THIS DIRECTORY OR THE AUTO-GENERATED FILES IT CONTAINS**. Doing so will
+prevent you, your reviewers and ohter contributors from being able to have threaded messages in GitHub.
+## What files does it contain?
+The files inside this directory are created by a workflow (which you can probably find in )
+that is executed when a new pull request is open in this repository. This file is added in a new commit to
+your pull request. The **Pullpo GitHub App** transforms your normal comments into threaded comments by
+commenting on this uniquely named file.
+## Will this directory keep getting bigger and bigger?
+No, the workflow removes all previous files in the directory. Since files have unique names within a
+repository, this avoids merge conflicts and also prevents an infinetly increasing file list. If the 
+ directory contains more than one file, it is likely because multiple pull requests were open at
+the same time at one point.
+## How will this appear on my Pull Request  or  tabs?
+The  tab will have the new threaded comments. Ideally you'll have 
+[logged into Pullpo](https://pullpo.io/login/github) with your GitHub account so the Pullpo App will be able
+to replace the new comments as authored by you. Otherwise they will show up as an action that the bot made and
+you'll be tagged in the new threaded comment. 
+
+As for the  tab, the  directory has been named by prefixing a
+special character that sorts it to the bottom of the page, so all comment threads will sit at the bottom and
+won't disturb anyone trying to read your changes.
+## So, what now...?
+Keep contributing as you're used to; your pull requests will receive an additional commit that enables 
+threaded comments. Other than that everything stays as usual.
+
