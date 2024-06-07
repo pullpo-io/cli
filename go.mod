@@ -35,7 +35,7 @@ require (
 	github.com/spf13/cobra v1.6.1
 	github.com/spf13/pflag v1.0.5
 	github.com/stretchr/testify v1.8.4
-	github.com/zalando/go-keyring v0.2.3
+	github.com/zalando/go-keyring v0.2.5
 	golang.org/x/crypto v0.14.0
 	golang.org/x/sync v0.1.0
 	golang.org/x/term v0.13.0
